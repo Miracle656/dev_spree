@@ -1,0 +1,9 @@
+{
+    "name": "DevSpree Tip Jar",
+    "description": "Send and receive tips on Base and Stacks",
+    "icon": "https://devspree.app/icon.png",
+    "homeUrl": "/tip-jar",
+    "version": "1.0.0",
+    "splashBackgroundColor": "#0F0F23",
+    "splashImageUrl": "/splash.png"
+}

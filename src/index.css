@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+/* FONTS (PRESERVED) */
+@font-face {
+  font-family: 'Space Mono';
+  src: url('./assets/Doto,Space_Mono/Space_Mono/SpaceMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('./assets/Doto,Space_Mono/Space_Mono/SpaceMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Doto';
+  src: url('./assets/Doto,Space_Mono/Doto/static/Doto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Doto';
+  src: url('./assets/Doto,Space_Mono/Doto/static/Doto-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #F4F4F4;
+  /* User requested #F4F4F4 */
+  color: #000000;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Doto', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/* --- NEO BRUTALISM UTILITIES (Refined for User Prompt) --- */
+
+.neo-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Card: Thick 3px border, hard shadow, white bg usually */
+.neo-card {
+  background-color: white;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+  border-radius: 4px;
+  /* Slight rounding allowed */
+}
+
+/* Inputs: High contrast, thick borders */
+.neo-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  border: 3px solid #000000;
+  background-color: white;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.neo-input:focus {
+  box-shadow: 4px 4px 0px 0px #000000;
+  border-color: #000000;
+  transform: translate(-1px, -1px);
+}
+
+/* Buttons: Solid fills */
+.neo-btn {
+  font-family: 'Doto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+  border-radius: 4px;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F4F4;
+  border-left: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0052FF;
+  /* Base Blue thumb */
+  border: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #855DCD;
+  /* Farcaster Purple hover */
+}
