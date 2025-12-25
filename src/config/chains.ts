@@ -19,6 +19,6 @@ export const stacksConfig = {
 
 // Contract addresses
 export const contractAddresses = {
-    tipJar: import.meta.env.VITE_TIPJAR_CONTRACT_ADDRESS || '',
+    tipJar: import.meta.env.VITE_TIPJAR_CONTRACT_ADDRESS || '0xF7D3F178a1cE83270EE594B4B6cc0aFD202DA002',
     platformWallet: import.meta.env.VITE_PLATFORM_WALLET_ADDRESS || '',
 };

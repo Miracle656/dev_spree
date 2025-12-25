@@ -3,14 +3,9 @@ import { useAppKitAccount, useAppKit } from '@reown/appkit/react';
 import { BrowserProvider, Contract, parseEther } from 'ethers';
 import { contractAddresses } from '../../../config/chains';
 
-// TipJar ABI (partial - just the functions we need)
-const TIPJAR_ABI = [
-    'function donate(address recipient, string calldata message) external payable',
-    'function getTopRecipients(uint256 count) external view returns (address[] memory, uint256[] memory)',
-    'function getRecentDonations(uint256 count) external view returns (tuple(address donor, address recipient, uint256 amount, uint256 platformFee, string message, uint256 timestamp)[] memory)',
-    'function recipientStats(address) external view returns (uint256 totalReceived, uint256 donationCount, uint256 withdrawableBalance)',
-    'function withdraw() external',
-];
+import { TIPJAR_ABI } from '../../../config/abis';
+
+// ABI is now imported from config
 
 interface Donation {
     donor: string;
