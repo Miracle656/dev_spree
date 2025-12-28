@@ -85,13 +85,13 @@ export function Home() {
                         </Card>
                     </Link>
 
-                    {/* Farcaster App (Coming Soon) */}
-                    <div className="opacity-90 h-full">
-                        <Card className="h-full !p-0 overflow-hidden flex flex-col border-4 shadow-neo">
+                    {/* Farcaster App (Active) */}
+                    <Link to="/polls" className="group no-underline text-black block h-full">
+                        <Card hover className="h-full !p-0 overflow-hidden flex flex-col border-4 shadow-neo hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-neo-lg transition-all">
                             {/* Card Header Colored by Chain (Farcaster Purple) */}
                             <div className="bg-neo-farcaster border-b-4 border-black p-6 flex justify-between items-center">
                                 <span className="font-display font-black text-white text-2xl tracking-wide drop-shadow-sm">SOCIAL</span>
-                                <div className="bg-black text-white border-2 border-white px-3 py-1 text-sm font-bold uppercase shadow-sm">Soon</div>
+                                <div className="bg-white border-2 border-black px-3 py-1 text-sm font-bold uppercase shadow-sm">Active</div>
                             </div>
 
                             <div className="p-10 flex-1 flex flex-col bg-white">
@@ -100,12 +100,12 @@ export function Home() {
                                 <p className="font-mono text-base font-medium leading-loose text-gray-800 mb-10 flex-1">
                                     Create verifiable on-chain polls directly from Farcaster frames.
                                 </p>
-                                <button disabled className="neo-btn w-full bg-white text-black text-lg py-4 border-3 opacity-50 cursor-not-allowed">
-                                    COMING SOON
-                                </button>
+                                <span className="neo-btn w-full bg-neo-farcaster text-white text-lg py-4 border-3 shadow-neo hover:bg-purple-600 flex justify-center">
+                                    LAUNCH APP
+                                </span>
                             </div>
                         </Card>
-                    </div>
+                    </Link>
 
                     {/* Stacks App (Coming Soon) */}
                     <div className="opacity-90 h-full">
